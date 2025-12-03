@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DeepInsight - CSV to PDF Report</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #020617;
+      padding: 2rem 2.5rem;
+      border-radius: 1.25rem;
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.8);
+      max-width: 480px;
+      width: 100%;
+      border: 1px solid rgba(148, 163, 184, 0.2);
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 0.9rem;
+      color: #9ca3af;
+      margin-bottom: 1.5rem;
+    }
+    input[type="file"] {
+      margin: 1rem 0;
+      color: #e5e7eb;
+    }
+    button {
+      background: linear-gradient(135deg, #6366f1, #22c55e);
+      border: none;
+      border-radius: 999px;
+      padding: 0.7rem 1.5rem;
+      font-size: 0.95rem;
+      color: white;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    .flash {
+      color: #f97373;
+      margin-bottom: 0.75rem;
+      font-size: 0.9rem;
+    }
+    .small {
+      font-size: 0.75rem;
+      color: #6b7280;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>DeepInsight</h1>
+    <p>Upload any CSV file and get an auto-generated PDF data report with summary stats and visualizations.</p>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for msg in messages %}
+          <div class="flash">{{ msg }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST" enctype="multipart/form-data">
+      <label for="file">Choose CSV file:</label><br />
+      <input type="file" id="file" name="file" accept=".csv" required />
+      <br />
+      <button type="submit">Generate PDF Report</button>
+    </form>
+
+    <div class="small">
+      Your data is processed locally on this server. No data leaves the environment.
+    </div>
+  </div>
+</body>
+</html>
