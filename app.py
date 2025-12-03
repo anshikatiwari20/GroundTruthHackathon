@@ -7,7 +7,14 @@ from report_generator import generate_pdf_report
 # Config
 UPLOAD_FOLDER = "uploads"
 REPORT_FOLDER = "reports"
-ALLOWED_EXTENSIONS = {"csv"}
+ALLOWED_EXTENSIONS = {
+    "csv", "tsv", "txt",
+    "xlsx", "xls",
+    "json",
+    "html", "htm",
+    "db", "sqlite",
+    "sql",
+}
 
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(REPORT_FOLDER, exist_ok=True)

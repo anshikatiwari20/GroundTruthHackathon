@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>DeepInsight - CSV to PDF Report</title>
+  <title>DeepInsight: The Automated Insight Engine</title>
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -64,7 +64,7 @@
 <body>
   <div class="card">
     <h1>DeepInsight</h1>
-    <p>Upload any CSV file and get an auto-generated PDF data report with summary stats and visualizations.</p>
+    <p>Upload any file like CSV or text file and get an auto-generated PDF data report with summary stats and visualizations.</p>
 
     {% with messages = get_flashed_messages() %}
       {% if messages %}
@@ -75,7 +75,7 @@
     {% endwith %}
 
     <form method="POST" enctype="multipart/form-data">
-      <label for="file">Choose CSV file:</label><br />
+      <label for="file">Choose your file:</label><br />
       <input type="file" id="file" name="file" accept=".csv" required />
       <br />
       <button type="submit">Generate PDF Report</button>
