@@ -1,4 +1,4 @@
-# 🚀 DeepInsight: The Automated Insight Engine  
+# 🚀 H-001 **DeepInsight**: The Automated Insight Engine  
 Instant AI-driven intelligence from raw data — delivered as executive-ready reports in just seconds.
 
 ---
