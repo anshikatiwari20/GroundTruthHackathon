@@ -39,58 +39,63 @@ Just **data → insights → report** in seconds.
 ✔ Fully local → No data leaves your machine  
 
 ---
-
-## 📊 What’s Included in the Report  
+## 📊 What’s Inside the Report
 
 | Section | Description |
 |--------|-------------|
-| Dataset Summary | Total rows, columns, data types |
-| Sample Preview | Top N rows from the file |
-| Missing Value Analysis | Bar chart for data gaps |
-| Numeric Insights | Statistics (mean, std, min/max, etc.) |
-| Histograms | Distribution of each numeric column |
-| Category Breakdown | Top values in text columns |
+| Dataset Overview | Rows, columns, column data types |
+| Data Snapshot | First N sample rows |
+| Data Quality View | Missing value charts |
+| Numeric Features | Summary statistics + histograms |
+| Categories & Trends | Top value frequencies |
+
+> Works across industries — AdTech, Finance, Retail, SaaS, Marketing, Healthcare, and more.
 
 ---
 
-## 🧠 System Architecture
+## 🔧 Under the Hood
 
-### 1️⃣ Real-time Event Ingestion
-- Python Watchdog monitors folder for changes
-
-### 2️⃣ High-Performance Analytics
-- Polars DataFrame engine ensures speed + schema safety
-
-### 3️⃣ ML-based Anomaly Detection
-- Isolation Forest spots unusual spikes/drops automatically
-
-### 4️⃣ Insight Generation (AI)
-- Google Gemini 1.5 Pro creates contextual explanations
-- Validated against real metrics for accuracy
-
-### 5️⃣ Report Rendering
-- Plotly for charts, WeasyPrint for PDF formatting
-
----
-
-## 🛠️ Tech Stack  
-
-| Component | Technology |
-|----------|------------|
+| Layer | Technology |
+|------|------------|
 | Language | Python 3.x |
 | Data Processing | Pandas |
-| Reporting Engine | Matplotlib + PdfPages |
-| Interface | CLI Script |
+| Visualization | Matplotlib |
+| PDF Report Engine | PdfPages (Matplotlib backend) |
+| Interface | Command Line Utility |
 
-Lightweight. Fast. Reliable. 🚀
+Designed to be modular, so advanced capabilities can be plugged in easily.
 
 ---
 
-## 📸 Proof of Functionality
+## 🧠 Architecture Roadmap
 
-- Terminal anomaly detection logs  
-- Final emailed PDF preview  
-> *Visual assets coming soon*
+Planned enhancements include:
 
+1️⃣ **AI-driven Insight Narratives**  
+→ Automatic business commentary using Gemini / LLMs  
 
+2️⃣ **SQL Data Ingestion Support**  
+→ Run queries directly, no CSV required  
 
+3️⃣ **Anomaly Detection Engine**  
+→ Highlight spikes & drops in performance metrics  
+
+4️⃣ **Web Upload UI**  
+→ Drag-and-drop CSV → Download PDF instantly  
+
+5️⃣ **PowerPoint / Slides Export**  
+→ Generate decks for leadership reviews
+
+---
+
+## 📸 Project Status
+
+✔ PDF generation engine complete  
+✔ Tested on multiple real-world CSV datasets  
+🚧 UI + AI Insight Module in active development
+
+> Visual demo, GIFs, and report samples coming soon ✨
+
+---
+
+This evolution-ready foundation turns **raw data into automated intelligence** — fast, accurate, and at scale.
