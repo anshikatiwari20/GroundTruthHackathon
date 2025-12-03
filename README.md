@@ -92,14 +92,14 @@ Planned enhancements include:
 1. **Clone the Repository-**
 First, clone the repository to your local machine by running:
    ```bash
-    git clone https://github.com/anshikatiwari20/DeepInsight.git
+    git clone https://github.com/anshikatiwari20/GroundTruthHackathon.git
 
     ```
 
 2. **Navigate to the Project Folder-**
 After cloning the repository, navigate to the project directory by running:
     ```bash
-    cd DeepInsight
+    cd GroundTruthHackathon
 
     ```
 
